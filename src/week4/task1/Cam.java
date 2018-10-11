@@ -1,30 +1,41 @@
-import week4.task1.HoaQua;
+package week4.task1;
 
-class Cam extends HoaQua{
-    private String color;
-    private int soluong;
+public class Cam extends HoaQua{
+    private String ngaynhap;
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
+    public String getNgaynhap()
+    {
+        return ngaynhap;
     }
 
-    public int getSoluong() {
-        return soluong;
+    public void setNgaynhap(String nhap)
+    {
+        ngaynhap=nhap;
     }
 
-    public void setSoluong(int soluong) {
-        this.soluong = soluong;
+    Cam(){
+        ngaynhap = "01/01/2017";
     }
-    public void Cam(String color,int soluong){
-        this.color=color;
-        this.soluong=soluong;
+    Cam(String nhap)
+    {
+        ngaynhap = nhap;
     }
-    public void printfCam(){
-        System.out.println("Trung bình khoảng: "+this.soluong+" quả/kg");
-        System.out.println("Màu vỏ: "+this.color);
+    Cam(String l, String xx, String nn)
+    {
+        super.setLoai(l);
+        super.setXuatxu(xx);
+        ngaynhap = nn;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+"\nNgay nhap: "+ngaynhap;
+    }
+
+    public static void main(String[] args)
+    {
+        Cam c = new Cam("Cam","Trung Quoc","02/03/2018");
+        System.out.println(c);
+    }
+
 }
