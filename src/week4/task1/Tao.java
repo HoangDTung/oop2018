@@ -8,15 +8,15 @@ public class Tao extends HoaQua{
         return ngaynhap;
     }
 
-    public void setNgaynhap(String n)
+    public void setNgaynhap(String nhap)
     {
-        ngaynhap=n;
+        ngaynhap=nhap;
     }
 
     Tao(){}
-    Tao(String n)
+    Tao(String nhap)
     {
-        ngaynhap = n;
+        ngaynhap = nhap;
     }
     Tao(String l, String xx, String nn)
     {
@@ -34,8 +34,8 @@ public class Tao extends HoaQua{
     {
         Tao t = new Tao();
         t.setLoai("Tao");
-        t.setXuatxu("Sa Pa");
-        t.setNgaynhap("02/03/2000");
+        t.setXuatxu("EU");
+        t.setNgaynhap("10/11/2018");
         System.out.println(t);
 
     }
