@@ -29,7 +29,7 @@ public class CamCaoPhong extends Cam{
 
     public static void main(String[] args)
     {
-        CamCaoPhong ccp = new CamCaoPhong("Cam Cao Phong","SaPa","18/07/2018",2500);
+        CamCaoPhong ccp = new CamCaoPhong("Cam Cao Phong","LaoCai","10/11/2018",2500);
         ccp.setGia(4000);
         System.out.println(ccp);
     }
