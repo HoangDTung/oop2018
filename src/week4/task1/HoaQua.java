@@ -39,3 +39,4 @@ public class HoaQua {
         HoaQua hq = new HoaQua("Cam", "SaPa");
         System.out.println(hq);
     }
+}
