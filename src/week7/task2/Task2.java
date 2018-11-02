@@ -14,7 +14,8 @@ class Cat extends Animal {
 
 public class Task2 {
     static BufferedReader bufferedReader = null;
-
+    //static int a=5;
+    //static int b=0;
     public static void getNullPointerException(Expression e) throws NullPointerException {
         System.out.println(e.toString());
     }
@@ -24,6 +25,7 @@ public class Task2 {
     }
 
     public static void getArithmeticException(Division division) throws ArithmeticException {
+    //	division.Division(a,b);
         System.out.println(division.evaluate());
     }
 
@@ -32,24 +34,24 @@ public class Task2 {
         Cat cat = (Cat) animal;
         throw new ClassCastException();
     }
-
     public static void getFileNotFoundException() throws FileNotFoundException {
-        bufferedReader = new BufferedReader(new FileReader("abc.txt"));
+        bufferedReader = new BufferedReader(new FileReader("a.txt"));
     }
 
     public static void getIOException() throws IOException {
-        bufferedReader = new BufferedReader(new FileReader("abc.txt"));
+        bufferedReader = new BufferedReader(new FileReader("a.txt"));
     }
 
 
     public static void main(String[] args) {
-      //  Expression expression = null;
+        Expression expression = null;//test
 
-      //  int[] array = {1, 2, 3};
+        int[] array = {1, 2, 3};//test
 
-      //  Division division = new Division(new Numeral(10), new Numeral(10));
+        Division division = new Division(new Numeral(10), new Numeral(0)); //test
 
         try {
+        	getArithmeticException(division);
         	getIOException();
         } catch (NullPointerException e) {
             System.out.println("lỗi NullPointerException");
